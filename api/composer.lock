@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "248881a24394c13f5987f61e98389d30",
+    "content-hash": "4c136a7b37d27bc88b5e938fa20fafe2",
     "packages": [
         {
             "name": "brick/math",
@@ -5496,17 +5496,24 @@
         },
         {
             "name": "vince/acme-door-pad",
-            "version": "dev-develop",
-            "dist": {
-                "type": "path",
-                "url": "C:/TechTests/ACME-DoorPad",
-                "reference": "3987337e1b000addce59f1ba7c03f693bcff276e"
+            "version": "0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Vince-C9/ACME-DoorPad.git",
+                "reference": "c3e95a7f7c5f807a12c423040454d62aa0ad726a"
             },
             "require-dev": {
                 "laravel/legacy-factories": "^1.3.2",
                 "orchestra/testbench": "^8.19"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Vince\\AcmeDoorPad\\AcmeDoorPadBaseServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Vince\\AcmeDoorPad\\": "src/"
@@ -5524,10 +5531,7 @@
                 }
             ],
             "description": "Security Door Pad for ACME Enterprises",
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "time": "2024-01-15T02:49:03+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -6735,16 +6739,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.5",
+            "version": "10.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ed21115d505b4b4f7dc7b5651464e19a2c7f7856"
+                "reference": "e5c5b397a95cb0db013270a985726fcae93e61b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ed21115d505b4b4f7dc7b5651464e19a2c7f7856",
-                "reference": "ed21115d505b4b4f7dc7b5651464e19a2c7f7856",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e5c5b397a95cb0db013270a985726fcae93e61b8",
+                "reference": "e5c5b397a95cb0db013270a985726fcae93e61b8",
                 "shasum": ""
             },
             "require": {
@@ -6816,7 +6820,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.5"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.7"
             },
             "funding": [
                 {
@@ -6832,7 +6836,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-27T15:13:52+00:00"
+            "time": "2024-01-14T16:40:30+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -8181,14 +8185,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "vince/acme-door-pad": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
