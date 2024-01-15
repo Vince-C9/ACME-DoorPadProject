@@ -31,8 +31,8 @@ You should now have your new tables and config files installed.  Unfortunately I
 There are three console commands you should be able to use with this plugin in place to generate keys.
 
 1. You can use `(docker prefix) php artisan security:keyAdd --amount=x` to queue up X amount of keys.  This will batch into chunks of 100 and dispatch them asyncrhonously.
-2. You can use `security:associate {user_id} {key}` to associate a user in the KeypadUsers table with the provided key.  You will need to use Tinker to add a user at this time.
-3. You can use `security:dissociateKey {user_id}` to remove a users assigned key.
+2. You can use `(docker prefix) security:associate {user_id} {key}` to associate a user in the KeypadUsers table with the provided key.  You will need to use Tinker to add a user at this time.
+3. You can use `(docker prefix) security:dissociateKey {user_id}` to remove a users assigned key.
 
  At this time, there are no Admin API pages that allow the addition and removal of users or keys due to time constraints.
 
