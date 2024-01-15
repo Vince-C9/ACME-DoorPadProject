@@ -10,7 +10,7 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "vince/acme-door-pad": "dev-develop"
+        "vince/acme-door-pad": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -64,11 +64,8 @@
     },
     "repositories": {
         "vince/acme-door-pad": {
-            "type": "path",
-            "url": "C:\\TechTests\\ACME-DoorPad",
-            "options": {
-                "symlink": true
-            }
+            "type": "git",
+            "url": "https://github.com/Vince-C9/ACME-DoorPad.git"
         }
     },
     "minimum-stability": "dev",
